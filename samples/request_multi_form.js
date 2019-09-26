@@ -1,4 +1,4 @@
-var {SimplySign} = require("../util")
+var SimplyBlock = require("simplyblock")
 
 async function main(){
 
@@ -16,7 +16,7 @@ async function main(){
         "contract" : filePath
     }
     
-    var objSimplySign = new SimplySign(privateKey, publicKey)
+    var objSimplySign = new SimplyBlock.sign.SimplySign(privateKey, publicKey)
     var {response, body} = await objSimplySign.GatewayRequest(url, data, files)
     console.log(body)
 

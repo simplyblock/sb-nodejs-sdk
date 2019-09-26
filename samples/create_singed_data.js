@@ -1,4 +1,4 @@
-var {SimplySign} = require("../util")
+var SimplyBlock = require("simplyblock")
 
 // Required Data
 var publicKey = "hmac_pub_1"
@@ -8,6 +8,6 @@ var data = {
 }
 
 // Generate Signature
-var objSimplySign = new SimplySign(privateKey, publicKey)
+var objSimplySign = new SimplyBlock.sign.SimplySign(privateKey, publicKey)
 var signedData = objSimplySign.GenerateSignature(data)
 console.log(signedData)

@@ -1,0 +1,36 @@
+{
+  "name": "simplyblock",
+  "version": "1.0.0",
+  "description": "Signing and Request package for Simply Block API Gateway",
+  "main": "index.js",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "request": "^2.88.0",
+    "requests": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JitenderBhutani/simply_block_js.git"
+  },
+  "keywords": [
+    "Signing",
+    "and",
+    "Request",
+    "package",
+    "for",
+    "Simply",
+    "Block",
+    "API",
+    "Gateway"
+  ],
+  "author": "Jitender Bhutani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JitenderBhutani/simply_block_js/issues"
+  },
+  "homepage": "https://github.com/JitenderBhutani/simply_block_js#readme"
+}

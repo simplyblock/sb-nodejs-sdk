@@ -2,7 +2,11 @@ const Crypto = require("crypto")
 const request = require('request')
 const fs = require("fs")
 
-
+/**
+ * @class SimplySign
+ * @augments privateKey - Token Private Key
+ * @augments publicKey - Token Public Key
+ */
 function SimplySign(privateKey, publicKey){
     this.privateKey = privateKey
     this.publicKey = publicKey
@@ -10,6 +14,10 @@ function SimplySign(privateKey, publicKey){
     this.signedData = null
 }
 
+/**
+ * Generate Signature
+ * @augments data - Request Data
+ */
 SimplySign.prototype.GenerateSignature = function(data){
     
     // Convert to String
@@ -24,6 +32,13 @@ SimplySign.prototype.GenerateSignature = function(data){
     return this.signedData
 }
 
+
+/**
+ * Generate Signature
+ * @augments data - Request Data
+ * @augments uri - Request URI
+ * @augments files - if any => {}
+ */
 SimplySign.prototype.GatewayRequest = async function(uri, data, files=null){
 
     return new Promise((resolve, reject) => {
@@ -33,7 +48,7 @@ SimplySign.prototype.GatewayRequest = async function(uri, data, files=null){
         
         if (files != null){
 
-            // Read Files - 
+            // Read Files
             Object.keys(files).forEach(function(key) {
                 files[key] = fs.createReadStream(files[key])
             });
