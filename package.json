@@ -1,6 +1,6 @@
 {
   "name": "simplyblock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Signing and Request package for Simply Block API Gateway",
   "main": "index.js",
   "dependencies": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JitenderBhutani/simply_block_js.git"
+    "url": "git+https://github.com/simplyblock/sb-nodejs-sdk.git"
   },
   "keywords": [
     "Signing",
@@ -30,7 +30,7 @@
   "author": "Jitender Bhutani",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JitenderBhutani/simply_block_js/issues"
+    "url": "https://github.com/simplyblock/sb-nodejs-sdk/issues"
   },
-  "homepage": "https://github.com/JitenderBhutani/simply_block_js#readme"
+  "homepage": "https://github.com/simplyblock/sb-nodejs-sdk#readme"
 }
